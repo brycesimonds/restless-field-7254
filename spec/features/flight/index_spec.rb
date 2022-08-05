@@ -76,9 +76,9 @@ RSpec.describe 'Flight index page' do
 
 
     flight_passenger_1 = FlightPassenger.create!(flight: flight_1, passenger: passenger_1)
-    flight_passenger_1 = FlightPassenger.create!(flight: flight_3, passenger: passenger_3)
-    flight_passenger_1 = FlightPassenger.create!(flight: flight_4, passenger: passenger_4)
-    flight_passenger_1 = FlightPassenger.create!(flight: flight_5, passenger: passenger_5)
+    flight_passenger_2 = FlightPassenger.create!(flight: flight_3, passenger: passenger_3)
+    flight_passenger_3 = FlightPassenger.create!(flight: flight_4, passenger: passenger_4)
+    flight_passenger_4 = FlightPassenger.create!(flight: flight_5, passenger: passenger_5)
 
     visit '/flights'
 
@@ -99,7 +99,7 @@ RSpec.describe 'Flight index page' do
     end
   end
 
-  it 'has can delete a passenger from a specfic flight' do 
+  it 'can delete a passenger from a specfic flight' do 
     airline_1 = Airline.create!(name: 'American')
     airline_2 = Airline.create!(name: 'Delta')
     airline_3 = Airline.create!(name: 'JetBlue')
@@ -118,9 +118,10 @@ RSpec.describe 'Flight index page' do
 
 
     flight_passenger_1 = FlightPassenger.create!(flight: flight_1, passenger: passenger_1)
-    flight_passenger_1 = FlightPassenger.create!(flight: flight_3, passenger: passenger_3)
-    flight_passenger_1 = FlightPassenger.create!(flight: flight_4, passenger: passenger_4)
-    flight_passenger_1 = FlightPassenger.create!(flight: flight_5, passenger: passenger_5)
+    flight_passenger_2 = FlightPassenger.create!(flight: flight_3, passenger: passenger_1)
+    flight_passenger_3 = FlightPassenger.create!(flight: flight_3, passenger: passenger_3)
+    flight_passenger_4 = FlightPassenger.create!(flight: flight_4, passenger: passenger_4)
+    flight_passenger_5 = FlightPassenger.create!(flight: flight_5, passenger: passenger_5)
 
     visit '/flights'
    

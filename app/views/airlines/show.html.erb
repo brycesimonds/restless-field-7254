@@ -1,0 +1,8 @@
+<h1>Airline Show Page</h1>
+
+<p>List of passengers on this airline:</p>
+<ul>
+    <% @airline.distinct_passengers.each do |passenger|  %>
+        <li><%= passenger.name %></li>
+    <% end %>
+</ul>

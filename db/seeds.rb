@@ -27,7 +27,7 @@ passenger_5 = Passenger.create!(name: "Kingston Brown", age: 84)
 
 
 flight_passenger_1 = FlightPassenger.create!(flight: flight_1, passenger: passenger_1)
-flight_passenger_1 = FlightPassenger.create!(flight: flight_2, passenger: passenger_2)
-flight_passenger_1 = FlightPassenger.create!(flight: flight_3, passenger: passenger_3)
-flight_passenger_1 = FlightPassenger.create!(flight: flight_4, passenger: passenger_4)
-flight_passenger_1 = FlightPassenger.create!(flight: flight_5, passenger: passenger_5)
+flight_passenger_2 = FlightPassenger.create!(flight: flight_2, passenger: passenger_2)
+flight_passenger_3 = FlightPassenger.create!(flight: flight_3, passenger: passenger_3)
+flight_passenger_4 = FlightPassenger.create!(flight: flight_4, passenger: passenger_4)
+flight_passenger_5 = FlightPassenger.create!(flight: flight_5, passenger: passenger_5)
